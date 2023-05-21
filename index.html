@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="slider/css/mainBxSlider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="slider/js/jquery.bxslider.js"></script>
+  <link href="slider/css/jquery.bxslider.css" rel="stylesheet" />
+  <title>FlightPool</title>
+
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="test-0-logo" onclick="slowScroll('#top')">
+        <span>
+          <img src="media/Безымянный.png" width="217" height="55">
+        </div>
+      </span>
+      <div class="test-0-nav">
+        <a class="test-0-nav-1" href="#overview" title="О нас" onclick="slowScroll('#main')">Акции</a>
+        <a class="test-0-nav-2"  href="#vod">Поиск билетов</a>
+        <a class="test-0-nav-4" href="login.html" onclick="slowScroll('#faq')" title="Личный кабинет">Личный кабинет</a>
+
+      </div>
+    </header>
+
+    <div class="content">
+      <div id="top">
+        <h1>FlightPool</h1>
+        <h3>Мы сближаем города, вы - живете там, где хотите.</h3>
+      </div>
+
+      <div id="main">
+        <div class="intro">
+          <h1>FlightPool – новая и энергичная авиакомпания, предоставляющая услуги пассажирских авиаперевозок небольшими малогабаритными самолетами.</h1>
+          <span>Целью FlightPool считается:</span>
+        </div>
+        <div class="text">
+          <span> Главная цель компании – развить связность между городами России путем организации авиасообщений на непостоянной основе по мере накопления запросов на перелет.</span>
+        </div>
+      </div>
+
+
+<div>
+  <div class="slider">
+    <ul class="bxslider" id="1">
+        <li><img src="media/pics/1.jpg"></li>
+        <li><img src="media/pics/2.jpg"></li>
+        <li><img src="media/pics/3.jpg"></li>
+        <li><img src="media/4.jpg"></li>
+        <li><img src="media/5.jpg"></li>
+    </ul>
+
+  <script>
+    jQuery(document).ready(function(){
+      jQuery('.bxslider').bxSlider({
+        autoStart: true,
+        auto: true,
+        pause: 4000,
+        autoDirection: 'next',
+        autoHover: true
+      });
+    });
+  </script>
+</div>
+</div>
+
+
+
+      <div id="vod"class="vod">
+        <form  >
+        <h2 style="color: #523737;">Поиск билетов</h2>
+        <div class="">
+          <input class="test-0-fd" type="text" placeholder="Город или аэропорт отправления" name="от" required>
+          <input class="test-0-fa" type="text" placeholder="Город или аэропорт назначения " name="ку" required="required">
+        </div> 
+        <div>
+         <input class="test-0-fdt" type="date" name="ot" required>
+         <input class="test-0-fat" type="date" name="ty" required>
+       </div>
+        <button class="test-0-fbs" type="submit" onclick="window.location.href = 'search.html';">Поиск</button>
+     </div>
+   </form>
+     <div id="overview">
+      <h2>Акции</h2>
+      <h4><p>Возврат и обмен билетов</p><p>Лучшие предложения</p><p>Видеться чаще</p><p>Все снова включено</p></h4>
+      <div class="img ">
+        <span>Пандемия изменила планы многих путешественников, но мы знаем, что она не будет длиться вечно. Как только все это закончится, мы продолжим исследовать этот мир так, как мы привыкли. Специальные правила, разработанные для этой сложной ситуации, помогут вам отменить поездку или отложить её на потом.</span>
+      </div>
+      <div class="img ">
+        <span>С 10 августа возобновим полеты в Турцию. Рейсы из Москвы в Анталию будут выполняться дважды в день ежедневно, а рейсы по маршруту Москва-Даламан будут выполняться от трех до семи раз в неделю.</span>
+      </div>
+      <div class="img">
+        <span>С начала января мы расширяем географию полетов по России, чтобы вы могли чаще видитесь с близкими. Выбирайте нашу компанию, чтобы лететь туда, где вас всегда ждут.</span>
+      </div>
+      <div class="img">
+        <span>
+        Снова увидеть улицы, которые так много видели. Обнять своих близких и оглянуться назад, чтобы увидеть, через что вам пришлось пройти. И думать о новых мечтах, которые будут такими особенными!</span>
+      </div>
+    </div> 
+    <div class="ot">
+      <div style="margin-top:90px ;">
+      <h2 style="color: #523737">Отзывы</h2>
+    </div>
+      <div>
+        <div >
+          <div class="otone">
+            <span style="color: #666;">Денис</span>
+            <p>Воспользовался компанией Llight Pool. Перелет был с Москвы До Питера. Рейс не задержали. Вовремя все прошло. К ручной кладе конечно немного прикапались. Но удалось решить вопрос. Так ничего особенного так как перелет был в эконом классе.</p>
+          </div>
+          <div class="otone">
+            <span style="color: #666;">Олег</span>
+            <p>Регулярно Llight Pool помогает мне встретиться с моим лучшим другом, который находится на другом конце нашей необъятной. Спасибо Вам большое за такую возможность. В замечательное время живем, когда можно взять и переместиться на другой конец России за пару часов.
+
+            </p>
+          </div >
+          <div class="otone">
+            <span style="color: #666;">Валентина</span>
+            <p>Часто пользуюсь авиакомпанией Llight Pool. Если не считать платных дополнительных услуг, то меня все устраивает. Задержек рейса не припомню, грубости персонала тоже, стоимость низкая. Ничего плохого сказать не могу.</p>
+          </div>
+        </div>
+        <div>
+          <div >
+            <div class="otone">
+              <span style="color: #666;">Марина</span>
+              <p>Очень комфортно, система развлечений на борту, вежливые бортпроводники. Питание на выбор (более 10 вариантов, если заказывать на сайте до полета). Комплименты детишкам.</p>
+            </div>
+            <div class="otone">
+              <span style="color: #666;">Наталья</span>
+              <p>Пользуемся услугами авиакомпании регулярно по разным направлениям. Нерешаемых проблем с компанией у нас не возникало. Однажды правда переносился рейс стыковочный из-за чего едва не сорвалась поездка.
+
+              </p>
+            </div >
+            <input  class="otone" type="text" placeholder="Оставьте свой отзыв " name="user-ot" required>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="contactss">
+        <form action="mail.php" method="POST">
+          <div class="container">
+            <h2>Подпишитесь на уведомления о наших закрытых акциях</h2>
+            <span>Только самые выгодные и лучшие предложения будут приходить на ваш ящик</span>
+          </div>
+
+          <div class="container">
+            <input class="test-0-sie" type="text" placeholder="Имя" name="user-name" required>
+            <input class="test-0-sbs" type="text" placeholder="Ваша почта" name="user-email" required>
+            <label>
+              <input type="checkbox" checked="checked" name="subscribe"> Ежедневная рассылка новостей
+            </label>
+          </div>
+
+          <div class="container">
+            <input type="submit" value="Подписаться">
+           </div> 
+          </form>
+      </div>
+    </div>
+    
+    <div class="foooooo">
+      <div class="footericons">
+        <div>
+        <span class="footercoyrightname">©FlightPool</span>
+        <p style="padding-left: 50px;">Aвиакомпания</p>
+      </div>
+      </div>
+      <div>
+        <div class="footericons">
+          <p class="footerc">Наши социальные сети</p>
+        </div>
+        <div class="footericons" >
+          <div style="padding-top: 57px;">
+        <a href="https://vk.com/feed">
+          <img src="media/free-icon-vk-5968893.png" width="24px" height="24px">
+        </a>
+        <a href="https://instagram.com/">
+          <img src="media/free-icon-instagram-717414.png">
+        </a>
+        </div>
+      </div>
+        <div class="footericons">
+          <div style="text-align: center; padding-top: 20px; padding-left: 30px;">
+         <a href="8 (800) 100-10-10" class=" footerbuttoncall">Позвонить</a><br>
+         <p class="footerco">Позвоните нам, для помощи с <br>оформлением билетов.</p>
+         </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+</body>
+</html>
